@@ -103,4 +103,22 @@ footer p {
     margin: 0;
     padding: 30px;
 }
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 30px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 30px;
+    justify-content: space-evenly;
+}
 

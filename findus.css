@@ -69,4 +69,22 @@ a{
     color: rgb(228,199,129);
     margin:0;
     margin-top: -20px;
+}   
+/* Second part of the code */
+.quote {
+    text-align: center;
+    color: rgb(14,28,79);
+    padding-right: 20px;
+    padding-top: 30px;
+    font-family: 'Ephesis', cursive;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.googlemaps {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }

@@ -88,3 +88,19 @@ a{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+footer {
+    background-color: rgba(137, 196, 244, 0.589);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer p {
+    margin: 0;
+    padding: 30px;
+}
+

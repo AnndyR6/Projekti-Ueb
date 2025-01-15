@@ -14,7 +14,15 @@
     </button>
     <button class="loginform">
         <a href="login.html">
-        <span class="icon1"><i class="fa-solid fa-user"></i></span>
+        <span class="icon1">
+            <i class="fa-solid fa-user"></i>
+            <?php 
+                session_start();
+                if(isset($_SESSION['user'])){
+                    echo "<span style=\"font-size:16px\">{$_SESSION['user']['first_name']} {$_SESSION['user']['last_name']}</span>";
+                }
+            ?>
+    </span>
         </a>
     </button>
     <div class="main">

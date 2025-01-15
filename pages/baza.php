@@ -20,7 +20,7 @@
                 <?php 
                     session_start();
                     if(isset($_SESSION['user'])){
-                        echo "{$_SESSION['user']['first_name']} {$_SESSION['user']['last_name']}";
+                        echo "<span style=\"font-size:16px\">{$_SESSION['user']['first_name']} {$_SESSION['user']['last_name']}</span>";
                     }
                 ?>
             </span>

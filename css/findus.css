@@ -47,8 +47,12 @@ a{
     background: rgb(14,28,79);
 }
 .icon1{
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(14,28,79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .fjala1{
     display: inline center;

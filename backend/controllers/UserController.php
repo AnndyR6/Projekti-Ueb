@@ -46,4 +46,8 @@ class UserController{
             header("Location: /luxewatches/pages/baza.php");
         }
     }
+
+    public function logout(){
+        $_SESSION['user'] = null;
+    }
 }

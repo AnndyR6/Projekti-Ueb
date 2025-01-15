@@ -48,6 +48,10 @@ class UserController{
     }
 
     public function logout(){
+        session_start();
         $_SESSION['user'] = null;
+
+        $prevUrl = $_SERVER['HTTP_REFERER'];
+        header("Location: $prevUrl");
     }
 }

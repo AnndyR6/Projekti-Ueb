@@ -16,7 +16,7 @@
             </span>
         </button>
         <button class="loginform">
-            <a href="baza.html">
+            <a href="baza.php">
                 <span class="icon1">
                     <i class="fa-solid fa-house"></i>
                 </span>

@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="http://localhost/luxewatches/css/dizajni.css">
 </head>
 <header>
-    <button class="button1" link rel="stylesheet" href="login.html">
+    <button class="button1" link rel="stylesheet" href="login.php">
         <span>
             <i class="fa-solid fa-cart-shopping"></i>
         </span>
     </button>
     <button class="loginform">
-        <a href="login.html">
+        <a href="login.php">
             <span class="icon1">
                 <i class="fa-solid fa-user"></i>
                 <?php 
@@ -79,9 +79,9 @@
 <footer>
     <p>&copy; Luxe Watches</p>
     <div class="words">
-        <a href="aboutus.html">About Us</a>
-        <a href="findus.html">Find Us</a>
-        <a href="#contact">Contact</a>
+        <a href="aboutus.php">About Us</a>
+        <a href="findus.php">Find Us</a>
+        <a href="kontakt.php">Contact</a>
     </div>
     <div class="social-icons">
         <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>

@@ -86,10 +86,11 @@
 
 <div id="sidebar">
         <a href="dashboard.php">Dashboard</a>
-        <a href="users.php">Users</a>
+        <a href="contacts.php">Contacts</a>
         <a href="products.php">Products</a>
         <a href="aboutus.php">About Us</a>
         <a href="findus.php">Find us</a>
+        <a href="createproduct.php">Create Product</a>
         <p>Return to your web adventure from the dashboard!</p>
          <a href="../index.php" class="back">Back to Web</a>
     </div>
@@ -102,23 +103,29 @@
         <tr>
             <th name="id">ID</th>
             <th name="emri">Name</th>
-            <th name="foto">Picture</th>
             <th name="qmimi">Price</th>
+            <th name="qmimi">Description</th>
+
         </tr>
     </thead>
-    <tbody>           
+    <tbody>
+        <?php 
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/luxewatches/backend/controllers/ProductController.php';
+
+        $productsController = new ProductController();
+        $products = $productsController->get();
+        ?>           
+        <?php
+            foreach($products as $product){
+
+        ?>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>    
+            <td><?php echo $product['id']?></td>
+            <td><?php echo $product['name']?></td>
+            <td><?php echo $product['price']?></td>
+            <td><?php echo $product['description']?></td>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+            <?php }?>
     </tbody>
 </table>
     </div>

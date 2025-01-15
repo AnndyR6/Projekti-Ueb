@@ -66,10 +66,11 @@
 
 <div id="sidebar">
         <a href="http://localhost/luxewatches/pages/dashboard.php">Dashboard</a>
-        <a href="users.php">Users</a>
+        <a href="contacts.php">Contacts</a>
         <a href="products.php">Products</a>
         <a href="aboutus.php">About Us</a>
         <a href="findus.php">Find us</a>
+        <a href="createproduct.php">Create Product</a>
         <p>Return to your web adventure from the dashboard!</p>
          <a href="../index.php" class="back">Back to Web</a>
     </div>

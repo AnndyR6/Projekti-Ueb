@@ -11,13 +11,13 @@
     <title>Luxe Watches</title>
 </head>
 <header>
-    <button class="button1" link rel="stylesheet" href="login.html">
+    <button class="button1" link rel="stylesheet" href="login.php">
         <span>
             <i class="fa-solid fa-cart-shopping"></i>
         </span>
     </button>
 <button class="loginform">
-    <a href="login.html">
+    <a href="login.php">
         <span class="icon1">
             <i class="fa-solid fa-user"></i>
             <?php 
@@ -29,8 +29,17 @@
         </span>
         </a>
 </button>
+<?php 
+    if(isset($_SESSION['user'])){
+    ?>
+    <form class="form1" id="logout" method="post" action="/luxewatches/backend/routes/user/logout.php">
+        <button class="formbutton" type="submit">Log Out</button>
+    </form>
+    <?php 
+        }
+?>
 <div class="main">
-    <a href="baza.html">
+    <a href="baza.php">
     <h1 class="fjala1">L U X E</h1>
     <h1 class="fjala2">Watches</h1>
     </a>
@@ -46,9 +55,9 @@
     <footer>
         <p>&copy; Luxe Watches</p>
         <div class="words">
-            <a href="aboutus.html">About Us</a>
-            <a href="findus.html">Find Us</a>
-            <a href="#contact">Contact</a>
+            <a href="aboutus.php">About Us</a>
+            <a href="findus.php">Find Us</a>
+            <a href="kontakt.php">Contact</a>
         </div>
         <div class="social-icons">
             <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>

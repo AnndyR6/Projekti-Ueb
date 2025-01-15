@@ -102,28 +102,46 @@
 
 <div id="sidebar">
         <a href="dashboard.php">Dashboard</a>
-        <a href="users.php">Users</a>
+        <a href="contacts.php">Contacts</a>
+        <a href="products.php">Products</a>
         <a href="aboutus.php">About Us</a>
         <a href="findus.php">Find us</a>
+        <a href="createproduct.php">Create Product</a>
         <p>Return to your web adventure from the dashboard!</p>
          <a href="../index.php" class="back">Back to Web</a>
     </div>
 
     <div id="content">
-    <h2>USERS</h2>
+    <h2>Contacts</h2>
 
     <table class="table">
     <thead>
         <tr>
             <th name="id">ID</th>
-            <th name="username">Username</th>
-            <th name="email">Email</th>
-            <th name="number">Number</th>
-            <th name="password">Password</th>
-            <th name="usertype">User Type</th>
-            <th name="operations">Operations</th>
+            <th name="username">Email</th>
+            <th name="email">Message</th>
         </tr>
     </thead>
+    <tbody>
+    <tbody>
+        <?php 
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/luxewatches/backend/controllers/ContactController.php';
+
+        $contactController = new ContactController();
+        $contacts = $contactController->get();
+        ?>           
+        <?php
+            foreach($contacts as $contact){
+
+        ?>
+        <tr>
+            <td><?php echo $contact['id']?></td>
+            <td><?php echo $contact['email']?></td>
+            <td><?php echo $contact['message']?></td>
+        </tr>
+            <?php }?>
+    </tbody>
+    </tbody>
 </table>
     </div>
 

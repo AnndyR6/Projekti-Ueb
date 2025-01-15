@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <header>
-    <button class="button1" link rel="stylesheet" href="login.html">
+    <button class="button1" link rel="stylesheet" href="login.php">
         <span>
             <i class="fa-solid fa-cart-shopping"></i>
         </span>
     </button>
     <button class="loginform">
-        <a href="login.html">
+        <a href="login.php">
             <span class="icon1">
                 <i class="fa-solid fa-user"></i>
                 <?php 
@@ -29,7 +29,7 @@
     <?php 
     if(isset($_SESSION['user'])){
     ?>
-    <form class="form1" id="login" method="post" action="/luxewatches/backend/routes/user/logout.php">
+    <form class="form1" id="logout" method="post" action="/luxewatches/backend/routes/user/logout.php">
         <button class="formbutton" type="submit">Log Out</button>
     </form>
     <?php 
@@ -60,62 +60,35 @@
         “Look at your watch. Don’t look at what time it is.”
     </h2>  
     <div class="bodyifaqes">
+    <?php 
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/luxewatches/backend/controllers/ProductController.php';
+
+        $productsController = new ProductController();
+        $products = $productsController->get();
+        ?>           
+        <?php
+            foreach($products as $product){
+
+        ?>
         <div class="foto2">
             <img src="http://localhost/luxewatches/assets/Ore.jpg" class="foto2a" width="400px" height="400px">
-            <h1>Ore</h1>
-            <p class="price">3999.99 $</p>
+            <h1><?php echo $product['name']?></h1>
+            <h4><?php echo $product['description']?></h1>
+            <p class="price"><?php echo $product['price']?> $</p>
             <p>
                 <button>Add to Cart</button>
             </p>
         </div>
-        <div class="foto3">
-            <img src="http://localhost/luxewatches/assets/Qafore&Vathe.jpg" class="foto3a" width="400px" height="400px">
-            <h1>Set Qafore dhe Vathe</h1>
-            <p class="price">599.99 $</p>
-            <p>
-                <button>Add to Cart</button>
-            </p>
-        </div>
-        <div class="foto4">
-            <img src="http://localhost/luxewatches/assets/Ore.jpg" class="foto4a" width="400px" height="400px">
-            <h1>Ore</h1>
-            <p class="price">3999.99 $</p>
-            <p>
-                <button>Add to Cart</button>
-            </p>
-        </div>
-        <div class="foto5">
-            <img src="http://localhost/luxewatches/assets/Qafore&Vathe.jpg" class="foto5a" width="400px" height="400px">
-            <h1>Set Qafore dhe Vathe</h1>
-            <p class="price">599.99 $</p>
-            <p>
-                <button>Add to Cart</button>
-            </p>
-        </div>
-        <div class="foto6">
-            <img src="http://localhost/luxewatches/assets/Ore.jpg" class="foto6a" width="400px" height="400px">
-            <h1>Ore</h1>
-            <p class="price">3999.99 $</p>
-            <p>
-                <button>Add to Cart</button>
-            </p>
-        </div>
-        <div class="foto7">
-            <img src="http://localhost/luxewatches/assets/Qafore&Vathe.jpg" class="foto7a" width="400px" height="400px">
-            <h1>Set Qafore dhe Vathe</h1>
-            <p class="price">599.99 $</p>
-            <p>
-                <button>Add to Cart</button>
-            </p>
-        </div>
+        <?php }?>
+        
     </div>
 </body>
 <footer>
     <p>&copy; Luxe Watches</p>
     <div class="words">
-        <a href="aboutus.html">About Us</a>
-        <a href="findus.html">Find Us</a>
-        <a href="#contact">Contact</a>
+        <a href="aboutus.php">About Us</a>
+        <a href="findus.php">Find Us</a>
+        <a href="kontakt.php">Contact</a>
     </div>
     <div class="social-icons">
         <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>

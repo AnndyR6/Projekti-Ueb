@@ -1,11 +1,18 @@
 <?php
 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/luxewatches/backend/database/DB.php';
+
+
 class ProductController
 {
     private $db;
 
     public function __construct() {
         $this->db = new DB();
+    }
+
+    public function getById($id){
+        return $this->db->query("SELECT * FROM products WHERE id = ?", [$id]);
     }
 
     public function get(){

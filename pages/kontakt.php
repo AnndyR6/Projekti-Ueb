@@ -13,7 +13,7 @@
             </span>
         </button>
         <button class="loginform">
-            <a href="index.php">
+            <a href="baza.php">
                 <span class="icon1">
                     <ion-icon name="home-outline"></ion-icon>
                 </span>

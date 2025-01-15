@@ -26,6 +26,15 @@
             </span>
         </a>
     </button>
+    <?php 
+    if(isset($_SESSION['user'])){
+    ?>
+    <form class="form1" id="login" method="post" action="/luxewatches/backend/routes/user/logout.php">
+        <button class="formbutton" type="submit">Log Out</button>
+    </form>
+    <?php 
+        }
+    ?>
     <div class="main">
         <h1 class="fjala1">L U X E</h1>
         <h1 class="fjala2">W A T C H E S</h1>

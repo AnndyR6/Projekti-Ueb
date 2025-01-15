@@ -48,7 +48,7 @@
                     <a href="#" class="formlink">Forgot your password?</a>
                 </p>
                 <p id="linkCreateAccount" class="formtext">
-                    <a class="formlink">Don't have an account? Create account.</a>
+                    <a href="/luxewatches/pages/register.php" class="formlink">Don't have an account? Create account.</a>
                 </p>
             </div>
         </form>
@@ -71,7 +71,7 @@
 
                     <button class="formbutton" type="submit">Continue</button>
                     <p class="formtext">
-                        <a id="linkLogin" class="formlink">Already have an account? Log in.</a>
+                        <a href="/luxewatches/pages/login.php" id="linkLogin" class="formlink">Already have an account? Log in.</a>
                     </p>
                 </div>
             </div>

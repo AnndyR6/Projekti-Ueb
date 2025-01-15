@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
         displayError(passwordError, 'Password must be at least 6 characters.');
         return;
     }
-
         document.getElementById('login').submit();
     }
 

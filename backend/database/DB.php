@@ -65,4 +65,28 @@ class DB
             die("Exists check failed: " . $e->getMessage());
         }
     }
+
+    public function edit($table, $data, $condition, $params = [])
+    {
+        try {
+            // Prepare the SET clause of the SQL statement
+            $setClause = "";
+            foreach ($data as $column => $value) {
+                $setClause .= "$column = ?, ";
+            }
+            $setClause = rtrim($setClause, ", "); // Remove trailing comma and space
+
+            // Prepare the full SQL query
+            $sql = "UPDATE $table SET $setClause WHERE $condition";
+
+            // Merge the data values and the condition parameters for the final execution
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute(array_merge(array_values($data), $params));
+
+            // Return the number of rows affected
+            return $stmt->rowCount();
+        } catch (PDOException $e) {
+            die("Update failed: " . $e->getMessage());
+        }
+    }
 }

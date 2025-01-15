@@ -18,4 +18,8 @@ class ContactController{
         $prevUrl = $_SERVER['HTTP_REFERER'];
         header("Location: $prevUrl" . "?success=".urldecode("Faleminderit qe na kontaktuat"));
     }
+
+    public function get(){
+        return $this->db->query("SELECT * FROM submissions");
+    }
 }

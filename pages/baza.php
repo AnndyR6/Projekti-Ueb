@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="dizajni.css">
+    <link rel="stylesheet" href="http://localhost/luxewatches/css/dizajni.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxe Watches</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,7 +34,7 @@
 </header>
 <body>
     <div class="main">
-        <img src="logo1.png" alt="shopnow" class="foto1" width="1000px" height="500px">
+        <img src="http://localhost/luxewatches/assets/logo1.png" alt="shopnow" class="foto1" width="1000px" height="500px">
         <div class="foto1_overlay">
             <div class="butoni">
                 <button class="butoni2">Shop now</button>
@@ -46,7 +46,7 @@
     </h2>  
     <div class="bodyifaqes">
         <div class="foto2">
-            <img src="Ore.jpg" class="foto2a" width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Ore.jpg" class="foto2a" width="400px" height="400px">
             <h1>Ore</h1>
             <p class="price">3999.99 $</p>
             <p>
@@ -54,7 +54,7 @@
             </p>
         </div>
         <div class="foto3">
-            <img src="Qafore&Vathe.jpg" class="foto3a" width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Qafore&Vathe.jpg" class="foto3a" width="400px" height="400px">
             <h1>Set Qafore dhe Vathe</h1>
             <p class="price">599.99 $</p>
             <p>
@@ -62,7 +62,7 @@
             </p>
         </div>
         <div class="foto4">
-            <img src="Ore.jpg" class="foto4a" width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Ore.jpg" class="foto4a" width="400px" height="400px">
             <h1>Ore</h1>
             <p class="price">3999.99 $</p>
             <p>
@@ -70,7 +70,7 @@
             </p>
         </div>
         <div class="foto5">
-            <img src="Qafore&Vathe.jpg" class="foto5a" width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Qafore&Vathe.jpg" class="foto5a" width="400px" height="400px">
             <h1>Set Qafore dhe Vathe</h1>
             <p class="price">599.99 $</p>
             <p>
@@ -78,7 +78,7 @@
             </p>
         </div>
         <div class="foto6">
-            <img src="Ore.jpg" class="foto6a" width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Ore.jpg" class="foto6a" width="400px" height="400px">
             <h1>Ore</h1>
             <p class="price">3999.99 $</p>
             <p>
@@ -86,7 +86,7 @@
             </p>
         </div>
         <div class="foto7">
-            <img src="Qafore&Vathe.jpg" class="foto7a" width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Qafore&Vathe.jpg" class="foto7a" width="400px" height="400px">
             <h1>Set Qafore dhe Vathe</h1>
             <p class="price">599.99 $</p>
             <p>

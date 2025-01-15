@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxe Watches</title>
-    <link rel="stylesheet" href="dizajni.css">
+    <link rel="stylesheet" href="http://localhost/luxewatches/css/dizajni.css">
 </head>
 <header>
     <button class="button1" link rel="stylesheet" href="login.html">
@@ -33,37 +33,37 @@
 <body>
     <div class="bodyifaqes">
         <div class="foto2">
-            <img src="Ora1.jpg" class="foto2a" width="400px" height="400px" >
+            <img src="http://localhost/luxewatches/assets/Ora1.jpg" class="foto2a" width="400px" height="400px" >
             <h1>Ore</h1>
             <p class="price">3999.99 $</p>
             <p><button>Add to Cart</button></p>
         </div>
         <div class="foto3">
-            <img src="Ora2.jpg" class="foto3a"  width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Ora2.jpg" class="foto3a"  width="400px" height="400px">
             <h1>Ore</h1>
             <p class="price">3999.99 $</p>
             <p><button>Add to Cart</button></p>
         </div>
         <div class="foto4">
-            <img src="Ora3.jpg" class="foto4a"  width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Ora3.jpg" class="foto4a"  width="400px" height="400px">
             <h1>Ore</h1>
             <p class="price">3999.99 $</p>
             <p><button>Add to Cart</button></p>
         </div>
         <div class="foto5">
-            <img src="Ora4.jpg" class="foto5a"  width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Ora4.jpg" class="foto5a"  width="400px" height="400px">
             <h1>Ore</h1>
             <p class="price">3999.99 $</p>
             <p><button>Add to Cart</button></p>
         </div>
         <div class="foto6">
-            <img src="Ora5.jpg" class="foto6a"  width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Ora5.jpg" class="foto6a"  width="400px" height="400px">
             <h1>Ore</h1>
             <p class="price">3999.99 $</p>
             <p><button>Add to Cart</button></p>
         </div>
         <div class="foto7">
-            <img src="Ora6.jpg" class="foto7a"  width="400px" height="400px">
+            <img src="http://localhost/luxewatches/assets/Ora6.jpg" class="foto7a"  width="400px" height="400px">
             <h1>Ore</h1>
             <p class="price">3999.99 $</p>
             <p><button>Add to Cart</button></p>

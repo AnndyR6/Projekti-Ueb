@@ -7,7 +7,7 @@ class DB
         $host = "localhost";
         $dbname = "luxe_watches";
         $username = "root";
-        $password = "zanizani";
+        $password = "";
         try {
             $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
             $this->pdo = new PDO($dsn, $username, $password);

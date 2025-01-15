@@ -17,6 +17,12 @@
         <a href="login.html">
             <span class="icon1">
                 <i class="fa-solid fa-user"></i>
+                <?php 
+                    session_start();
+                    if(isset($_SESSION['user'])){
+                        echo "{$_SESSION['user']['first_name']} {$_SESSION['user']['last_name']}";
+                    }
+                ?>
             </span>
         </a>
     </button>

@@ -36,8 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
-    // If the form is valid, you can proceed with other actions (e.g., submitting the form)
-      alert('Login successful!'); // Replace this with your actual login logic
+        document.getElementById('login').submit();
     }
 
     function displayError(element, message) {

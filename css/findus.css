@@ -142,3 +142,116 @@ footer a:hover {
 footer .social-icons a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 1024px) {
+    .fjala1 {
+        font-size: 40px;
+    }
+
+    .fjala2 {
+        font-size: 90px;
+        margin-top: -15px;
+    }
+
+    .quote {
+        font-size: 50px;
+        padding-top: 20px;
+    }
+
+    .googlemaps {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 20px;
+    }
+
+    footer a {
+        font-size: 24px;
+    }
+
+    .social-icons {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fjala1 {
+        font-size: 35px;
+    }
+
+    .fjala2 {
+        font-size: 70px;
+        margin-top: -10px;
+    }
+
+    .quote {
+        font-size: 40px;
+        padding-top: 15px;
+    }
+
+    .googlemaps {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .icon1 {
+        font-size: 35px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 15px;
+    }
+
+    footer a {
+        font-size: 20px;
+    }
+
+    .social-icons {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fjala1 {
+        font-size: 28px;
+    }
+
+    .fjala2 {
+        font-size: 55px;
+        margin-top: -5px;
+    }
+
+    .quote {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    .googlemaps {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .icon1 {
+        font-size: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 10px;
+    }
+
+    footer a {
+        font-size: 18px;
+    }
+
+    .social-icons {
+        font-size: 22px;
+    }
+}

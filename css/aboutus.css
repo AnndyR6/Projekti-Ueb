@@ -151,5 +151,124 @@ footer a:hover {
 footer .social-icons a:hover {
     text-decoration: underline;
 }
-@media only screen and (max-width: 600px) {
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 35px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .vision {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .visionp, .ourstoryp, .qualityp {
+        font-size: 35px;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .button1, .loginform {
+        height: 40px;
+        width: 40px;
+        padding-top: 30px;
+        margin: 5px;
+    }
+
+    .fa-cart-shopping {
+        font-size: 30px;
+    }
+
+    .icon1 {
+        font-size: 30px;
+        gap: 5px;
+    }
+
+    .ourstory, .quality, .vision {
+        padding-top: 50px;
+    }
+
+    .ourstoryp, .qualityp, .visionp {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    footer p {
+        padding: 10px;
+    }
+
+    footer a {
+        font-size: 20px;
+    }
+
+    .social-icons {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .button1, .loginform {
+        height: 35px;
+        width: 35px;
+        padding-top: 20px;
+    }
+
+    .fa-cart-shopping {
+        font-size: 25px;
+    }
+
+    .icon1 {
+        font-size: 25px;
+    }
+
+    .formbutton {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .ourstoryp, .qualityp, .visionp {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    footer a {
+        font-size: 18px;
+    }
+
+    .social-icons {
+        font-size: 20px;
+    }
 }

@@ -156,3 +156,96 @@ a{
 .formlink:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        padding: 40px;
+    }
+
+    .formtitle {
+        font-size: 50px;
+    }
+
+    .forminput {
+        font-size: 22px;
+        height: 45px;
+    }
+
+    .formbutton {
+        font-size: 26px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 500px;
+        padding: 30px;
+        margin-top: 80px;
+    }
+
+    .formtitle {
+        font-size: 40px;
+    }
+
+    .forminput {
+        font-size: 20px;
+        height: 40px;
+    }
+
+    .formbutton {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .button1, .createform {
+        height: 45px;
+        width: 45px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .fa-cart-shopping, .icon1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        max-width: 400px;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .formtitle {
+        font-size: 35px;
+    }
+
+    .forminput {
+        font-size: 18px;
+        height: 35px;
+    }
+
+    .formbutton {
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    .button1, .createform {
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .fa-cart-shopping, .icon1 {
+        font-size: 24px;
+    }
+}

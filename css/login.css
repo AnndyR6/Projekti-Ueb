@@ -156,3 +156,90 @@ a{
 .formlink:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        width: 350px;
+        margin-left: 100px;
+        padding: 40px;
+        font-size: 22px;
+    }
+
+    .formtitle {
+        font-size: 50px;
+    }
+
+    .forminput {
+        font-size: 22px;
+        height: 45px;
+    }
+
+    .formbutton {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .icon1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 300px;
+        margin-left: 50px;
+        padding: 35px;
+        font-size: 20px;
+    }
+
+    .formtitle {
+        font-size: 40px;
+    }
+
+    .forminput {
+        font-size: 20px;
+        height: 40px;
+    }
+
+    .formbutton {
+        font-size: 22px;
+        padding: 8px;
+    }
+
+    .icon1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 280px;
+        margin: 20px auto;
+        padding: 30px;
+        font-size: 18px;
+    }
+
+    .formtitle {
+        font-size: 35px;
+    }
+
+    .forminput {
+        font-size: 18px;
+        height: 38px;
+    }
+
+    .formbutton {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .icon1 {
+        font-size: 24px;
+    }
+}

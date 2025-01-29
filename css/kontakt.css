@@ -120,5 +120,90 @@ h2{
 .formbutton:active{
     transform: scale(0.98);
 }
-@media only screen and (max-width: 600px) {
+
+@media (max-width: 1024px) {
+    .forms {
+        width: 350px;
+        margin-left: 100px;
+        padding: 40px;
+        font-size: 22px;
+    }
+
+    .input, .email, .text {
+        font-size: 22px;
+        padding: 5px;
+    }
+
+    .formbutton {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .icon1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .forms {
+        width: 300px;
+        margin-left: 50px;
+        padding: 35px;
+        font-size: 20px;
+    }
+
+    .input, .email, .text {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .formbutton {
+        font-size: 22px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .icon1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forms {
+        width: 90%;
+        max-width: 280px;
+        margin: 20px auto;
+        padding: 30px;
+        font-size: 18px;
+    }
+
+    .input, .email, .text {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .formbutton {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .icon1 {
+        font-size: 24px;
+    }
 }
